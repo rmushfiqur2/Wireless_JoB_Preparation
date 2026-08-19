@@ -131,7 +131,7 @@ y = H*x + n
 
 ### 3.2 Capacity with channel known at receiver only (no CSIT)
 
-If the transmitter doesn't know `H` (only the receiver does), the natural strategy is to split power equally across transmit antennas: `x`'s covariance is `(P/Nt)*I`. Capacity is:
+If the transmitter doesn't know `H` (only the receiver does), the natural strategy is to split power equally across transmit antennas: `x`'s covariance is `(P/Nt)*I`. Capacity is [Detailed Math](https://claude.ai/chat/1e4ba849-deb7-429a-9ef8-8501fab20274):
 
 ```
 C = log2( det( I + (P/(Nt*N0)) * H * H^H ) )
