@@ -88,7 +88,7 @@ theta_hat_MMSE = E[theta | y] = integral theta * p(theta|y) d(theta)
 
 ### 3.3 MAP estimator
 
-**Definition:** picks the *mode* (peak) of the posterior rather than its mean:
+**Definition:** picks the *mode* (peak) of the posterior rather than its mean [Detailed Math](https://claude.ai/chat/11736ec8-02b5-44a8-909f-8ee2d78d07ef):
 
 ```
 theta_hat_MAP = argmax_theta  p(theta|y) = argmax_theta  p(y|theta)*p(theta)
