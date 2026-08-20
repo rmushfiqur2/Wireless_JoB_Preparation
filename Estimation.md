@@ -82,7 +82,7 @@ y_out = integral y(t) * s*(t) dt      (correlator implementation, equivalent to 
 
 This is why matched filtering and **correlation receivers** are used interchangeably in textbooks — they're mathematically identical implementations of the same optimal operation.
 
-### 2.3 Why it's optimal — the Cauchy-Schwarz argument (be ready to sketch this)
+### 2.3 Why it's optimal — the Cauchy-Schwarz argument (be ready to sketch this [Detailed Math](https://claude.ai/chat/572c4f50-0d35-48ea-8a41-ede3d1700fd6))
 
 Output SNR for a linear filter `h(t)` applied to `s(t)+n(t)` (white noise, PSD `N0/2`) is maximized by Cauchy-Schwarz inequality applied to the correlation of `h` and `s` — equality (maximum) is achieved precisely when `h(t)` is proportional to `s*(T-t)`. The resulting **maximum achievable output SNR** is:
 
@@ -116,7 +116,7 @@ Fix an acceptable **false alarm probability** `P_FA = Pr(decide H_1 | H_0 true) 
 maximize P_D   subject to   P_FA <= alpha
 ```
 
-### 3.3 The Neyman-Pearson Lemma (the key result)
+### 3.3 The Neyman-Pearson Lemma (the key result [Detailed Math](https://claude.ai/chat/93f20537-6620-41b4-aea8-825a0e3c6883))
 
 The optimal NP detector is **still a likelihood ratio test**:
 
