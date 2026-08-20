@@ -78,7 +78,7 @@ Unlike MLE, Bayesian estimation treats `theta` as a **random variable** with a k
 
 **Definition:** the estimator minimizing mean-squared error `E[(theta - theta_hat)^2]`.
 
-**Key result (very quotable, be ready to state without derivation):** the MMSE estimator is the **posterior mean**:
+**Key result (very quotable, be ready to state without derivation):** the MMSE estimator is the **posterior mean** [Detailed Math](https://claude.ai/chat/1a74201d-06be-4c90-901a-03e68eccea59):
 
 ```
 theta_hat_MMSE = E[theta | y] = integral theta * p(theta|y) d(theta)
