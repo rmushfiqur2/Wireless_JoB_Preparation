@@ -108,7 +108,7 @@ Real systems use **root-raised-cosine (RRC)** pulse shaping split between transm
 
 MAP requires priors `P(H_i)`; ML implicitly assumes equal priors or doesn't care about them. But in some problems — **radar detection, spectrum sensing, anomaly/fault detection** — you genuinely don't have (or don't trust) a meaningful prior on `H_1` ("target present" / "signal present"), and more importantly, the *costs* of the two error types are wildly asymmetric (missing a real radar target vs. a false alarm have very different consequences). Neyman-Pearson handles exactly this case.
 
-### 3.2 The NP criterion
+### 3.2 The NP criterion [Detailed Math](https://claude.ai/chat/93f20537-6620-41b4-aea8-825a0e3c6883)
 
 Fix an acceptable **false alarm probability** `P_FA = Pr(decide H_1 | H_0 true) <= alpha`, and among all detectors satisfying that constraint, **maximize the probability of detection** `P_D = Pr(decide H_1 | H_1 true)`.
 
